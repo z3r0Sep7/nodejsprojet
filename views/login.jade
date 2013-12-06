@@ -1,0 +1,22 @@
+extends layout
+block content 
+  form(action="/login", method="POST")
+    fieldset
+      legend Log in
+      table
+        tr
+          td
+            label Email :
+          td 
+            input(name="user[email]", type="text")
+        tr
+          td
+            label Password : 
+          td
+            input(name="user[password]", type="password")
+        tr
+          td
+            button Submit
+        tr
+          td
+            a(href="/") Go Back
